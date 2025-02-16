@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    >
+
+    <TextView
+        android:id="@+id/maintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nuritobold"
+        android:text="즐겨찾기"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backToMain"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/home"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/roadNameInput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="입력"
+        android:paddingStart="30dp"
+        android:textColorHint="@color/dark_gray"
+        android:textColor="@color/white"
+        android:background="@drawable/border_drawble"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="300dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveRoadButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="저장"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:backgroundTint="@color/orange"
+        app:cornerRadius="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/roadNameInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

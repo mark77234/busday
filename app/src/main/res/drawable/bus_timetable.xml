@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 상단 주황색 부분 -->
+    <item android:top="0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/orange" />
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+
+    <!-- 하단 흰색 부분 -->
+    <item android:top="45dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+</layer-list>
